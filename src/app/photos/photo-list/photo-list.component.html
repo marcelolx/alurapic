@@ -1,7 +1,13 @@
-<h1>{{ title }}</h1>
-<ap-photo
-  *ngFor="let photo of photos" 
-  [url]="photo.url" 
-  [description]="photo.description"
->
-</ap-photo>
+<div class="text-center mt-3 mb-3">
+  <form>
+    <input 
+      class="rounded"
+      type="search"
+      placeholder="Search..."
+      autofocus
+      (keyup)="debounce.next($event.target.value)"
+    >
+  </form>
+</div>
+{{ nome | uppercase }}
+<ap-photos [photos]="photos | filterByDescription: filter" ></ap-photos>

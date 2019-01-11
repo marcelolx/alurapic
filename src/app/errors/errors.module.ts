@@ -9,3 +9,4 @@ import { NotFoundComponent } from './not-found/not-found.component';
   declarations: [NotFoundComponent]
 })
 export class ErrorsModule { }
+//TODO: ng generate module errors --> gera o module
