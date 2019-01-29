@@ -46,4 +46,3 @@ export class PhotoListComponent implements OnInit, OnDestroy {
       });
   }
 }
-//https://cursos.alura.com.br/course/angular-fundamentos/task/39147
