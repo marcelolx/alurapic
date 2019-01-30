@@ -3,7 +3,7 @@
 </p>
 <ol class="list-unstyled">
   <li *ngFor="let cols of rows" class="row no-gutters">
-    <div *ngFor="let photo of cols" class="col-4">
+    <div *ngFor="let photo of cols" class="col-4" appDarkenOnHover>
       <app-card>
         <ap-photo [url]="photo.url" [description]="photo.description">
         </ap-photo>
@@ -15,5 +15,3 @@
     </div>
   </li>
 </ol>
-
-https://cursos.alura.com.br/course/angular-fundamentos/task/42060
